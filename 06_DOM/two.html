@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    //1.
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerText);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+
+    //2. or use this
+     // querySelectorAll use korle loop use korte hoy. 
+
+    const dayOne = document.querySelectorAll('.day')
+    // console.log(dayOne);
+    
+    // dayOne.forEach(element => {
+    //     console.log(element.innerText);
+    
+    // });
+
+    // parent.children[1].style.color = "orange";
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild.innerHTML);
+
+    /*********************************************************************/
+   
+    ////////////////////////////////////////////////////////////////
+
+    const dayOne1 = document.querySelector('.day')
+    // console.log(dayOne1.innerText);
+    // console.log(dayOne1.parentElement);
+    // console.log(dayOne1.nextElementSibling);
+
+    // console.log("NODES: ", parent.childNodes);
+</script>
+</html>
